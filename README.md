@@ -30,11 +30,11 @@ The baseline model reached 96.1% accuracy but, as Grad-CAM revealed, did so by k
 The accuracy drop is the central finding rather than a regression. It shows the baseline score was partly inflated by a spurious correlation, while the intervention model is less accurate but more clinically defensible.
 
 <!-- IMAGE: Confusion matrices, baseline and intervention side by side. Save as assets/confusion_matrices.png -->
-![Confusion Matrices](assets/confusion_matrices.png)
+![Confusion Matrices](confusion_matrices.png)
 *Primary error in both models is glioma-meningioma confusion. Meningiomas naturally sit near the skull, which the baseline learned as a proxy for class identity.*
 
 <!-- IMAGE: Training and validation accuracy over 10 epochs. Save as assets/training_curves.png -->
-![Training Curves](assets/training_curves.png)
+![Training Curves](training_curves.png)
 
 ## How It Works
 
@@ -43,14 +43,14 @@ The accuracy drop is the central finding rather than a regression. It shows the 
 Grad-CAM showed that correct predictions attended to internal brain tissue, while misclassifications concentrated on the skull boundary, indicating the model used location rather than pathology.
 
 <!-- IMAGE: Baseline Grad-CAM gallery. Save as assets/gradcam_baseline.png -->
-![Baseline Grad-CAM](assets/gradcam_baseline.png)
+![Baseline Grad-CAM](gradcam_baseline.png)
 
 **2. The fix (intervention)**
 
 Adding CenterCrop(180) removes the skull boundary from the frame, while RandomHorizontalFlip, RandomRotation(15 degrees), and ColorJitter break location dependence. Misclassified attention shifted toward interior brain regions.
 
 <!-- IMAGE: Intervention Grad-CAM gallery. Save as assets/gradcam_intervention.png -->
-![Intervention Grad-CAM](assets/gradcam_intervention.png)
+![Intervention Grad-CAM](gradcam_intervention.png)
 
 ## Tech Stack and Design Choices
 
