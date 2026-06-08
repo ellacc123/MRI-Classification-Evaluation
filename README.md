@@ -4,10 +4,6 @@ A deep learning pipeline that trains, evaluates, and explains a ResNet-18 brain 
 
 **Tech:** Python, PyTorch, torchvision, scikit-learn, OpenCV, Grad-CAM, ResNet-18 (transfer learning)
 
-<!-- IMAGE: Side-by-side Grad-CAM, baseline (skull-edge focus) vs intervention (interior focus).
-     Strongest visual; keep it at the top. Save as assets/gradcam_comparison.png -->
-![Grad-CAM: Baseline vs Intervention](assets/gradcam_comparison.png)
-
 ## Overview
 
 CNN-based brain MRI classifiers often achieve high accuracy without learning clinically meaningful features, a problem known as shortcut learning, where the model bases predictions on misleading patterns such as scanner noise, image borders, or acquisition artifacts. This project investigates whether a ResNet-18 tumor classifier focuses on relevant brain anatomy or exploits non-biological artifacts, using Grad-CAM to visualize model attention and a preprocessing intervention to test whether the shortcut can be disrupted.
