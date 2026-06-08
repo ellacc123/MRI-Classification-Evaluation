@@ -1,8 +1,5 @@
 # MRI Classification Evaluation: Detecting Shortcut Learning in Brain Tumor CNNs
 
-**Prathiyanka Arun, Ella Cao, Dhruti Vadlamudi**
-Paul G. Allen School of Computer Science and Engineering, University of Washington, Seattle WA
-
 <!-- IMAGE: Project poster (full) or a banner.
      Suggested: export the poster PDF to PNG → save as assets/poster.png -->
 ![Project Poster](assets/poster.png)
