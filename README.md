@@ -1,7 +1,8 @@
 # Brain MRI Tumor Classification: Detecting and Mitigating Shortcut Learning
 
-A deep learning pipeline that trains, evaluates, and explains a ResNet-18 brain tumor classifier, then uses Grad-CAM to demonstrate that the model relied on a spurious shortcut and engineers a preprocessing intervention to mitigate it.
+A machine learning project that trains an AI model to identify brain tumors from MRI scans, then digs into why it makes its predictions. Using a visualization technique called Grad-CAM, the project shows that a model can hit 96% accuracy while quietly relying on the wrong cues, and demonstrates a fix that makes it more trustworthy.
 
+Tech: Python, PyTorch, torchvision, scikit-learn, OpenCV, Grad-CAM, ResNet-18 (transfer learning)
 **Tech:** Python, PyTorch, torchvision, scikit-learn, OpenCV, Grad-CAM, ResNet-18 (transfer learning)
 
 ## Overview
