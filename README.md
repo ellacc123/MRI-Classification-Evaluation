@@ -3,13 +3,6 @@
 A machine learning project that trains an AI model to identify brain tumors from MRI scans, then digs into why it makes its predictions. Using a visualization technique called Grad-CAM, the project shows that a model can hit 96% accuracy while quietly relying on the wrong cues, and demonstrates a fix that makes it more trustworthy.
 
 Tech: Python, PyTorch, torchvision, scikit-learn, OpenCV, Grad-CAM, ResNet-18 (transfer learning)
-**Tech:** Python, PyTorch, torchvision, scikit-learn, OpenCV, Grad-CAM, ResNet-18 (transfer learning)
-
-## Overview
-
-CNN-based brain MRI classifiers often achieve high accuracy without learning clinically meaningful features, a problem known as shortcut learning, where the model bases predictions on misleading patterns such as scanner noise, image borders, or acquisition artifacts. This project investigates whether a ResNet-18 tumor classifier focuses on relevant brain anatomy or exploits non-biological artifacts, using Grad-CAM to visualize model attention and a preprocessing intervention to test whether the shortcut can be disrupted.
-
-The baseline model reached 96.1% accuracy but, as Grad-CAM revealed, did so by keying on tumor location relative to the skull rather than tumor morphology. The intervention disrupted this shortcut and shifted model attention toward clinically relevant regions, trading 2.6% accuracy for a more trustworthy model. The project demonstrates that high accuracy does not guarantee a correct model, and that interpretability can surface failures that aggregate metrics hide.
 
 ## What I Built
 
