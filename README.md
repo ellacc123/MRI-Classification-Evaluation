@@ -4,7 +4,7 @@ A machine learning project that trains an AI model to identify brain tumors from
 
 Tech: Python, PyTorch, torchvision, scikit-learn, OpenCV, Grad-CAM, ResNet-18 (transfer learning)
 
-## What I Built
+## What I built
 
 | Component | Description |
 |-----------|-------------|
@@ -87,13 +87,9 @@ python gradcam.py               # set img_path; saves gradcam_output.png
 ## Context
 
 Course research project at the Paul G. Allen School of Computer Science and Engineering, University of Washington.
-Team: Prathiyanka Arun, Ella Cao, Dhruti Vadlamudi.
+Team: Ella Cao, Dhruti Vadlamudi, Prathiyanka Arun
 
-<details>
-<summary>References</summary>
-
+## References
 - Brown, A., et al. (2023). Detecting shortcut learning for fair medical AI using shortcut testing. *Nature Communications*, 14, 4314.
 - Hill, B. G., et al. (2024). The risk of shortcutting in deep learning algorithms for medical imaging research. *Scientific Reports*, 14, 29224.
 - Ong Ly, C., et al. (2024). Shortcut learning in medical AI hinders generalization. *npj Digital Medicine*, 7, 124.
-
-</details>
