@@ -85,8 +85,6 @@ python gradcam.py               # set img_path; saves gradcam_output.png
 - Test additional architectures and a larger, multi-source dataset.
 
 ## Context
-
-Course research project at the Paul G. Allen School of Computer Science and Engineering, University of Washington.
 Team: Ella Cao, Dhruti Vadlamudi, Prathiyanka Arun
 
 ## References
